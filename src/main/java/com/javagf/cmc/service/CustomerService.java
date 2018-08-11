@@ -40,7 +40,4 @@ public class CustomerService {
 		return customers;
 	}
 	
-	public List<Customer> findCustomerByRoll(Integer roll) {
-		return customerRepositery.findByRoll(roll);
-	}
 }

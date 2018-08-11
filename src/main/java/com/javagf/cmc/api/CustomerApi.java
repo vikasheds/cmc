@@ -24,11 +24,6 @@ public class CustomerApi {
 		return customerService.getCustomer(id);
 	}
 
-	@RequestMapping(value = "/get/roll/{roll}", method = RequestMethod.GET)
-	public List<Customer> findByRoll(@PathVariable Integer roll) {
-		return customerService.findCustomerByRoll(roll);
-	}
-
 	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	public List<Customer> getAllCustomer() {
 		return customerService.getAllCustomer();
