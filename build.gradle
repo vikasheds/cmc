@@ -32,4 +32,5 @@ dependencies {
 	runtime('org.springframework.boot:spring-boot-starter-test')
 	runtime 'io.springfox:springfox-swagger2:2.5.0'
     runtime 'io.springfox:springfox-swagger-ui:2.5.0'
+    compile('org.springframework.boot:spring-boot-starter-jersey')
 }
