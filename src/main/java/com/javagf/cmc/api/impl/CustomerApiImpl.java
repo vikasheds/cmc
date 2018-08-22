@@ -44,5 +44,5 @@ public class CustomerApiImpl implements CustomerApi {
 	public void deleteCustomer(@PathVariable String id) {
 		customerService.deleteCustomer(id);
 	}
-
+	
 }

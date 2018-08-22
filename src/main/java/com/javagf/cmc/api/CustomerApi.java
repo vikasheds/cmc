@@ -15,7 +15,7 @@ public interface CustomerApi {
 	String PATH_GET_CUSTOMER = "/get/{id}";
 	String PATH_GET_ALL_CUSTOMER = "/get";
 	String PATH_UPDATE_CUSTOMER = "/update/{id}";
-	String PATH_delete_customer = "/delete/{id}";
+	String PATH_DELETE_CUSTOMER = "/delete/{id}";
 
 	@RequestMapping(value = PATH_CREATE_CUSTOMER, method = RequestMethod.POST)
 	public Customer createCustomer(@RequestBody Customer customer);
@@ -29,6 +29,6 @@ public interface CustomerApi {
 	@RequestMapping(value = PATH_UPDATE_CUSTOMER, method = RequestMethod.PUT)
 	public void updateCustomer(@PathVariable String id, @RequestBody Customer customer);
 
-	@RequestMapping(value = PATH_delete_customer, method = RequestMethod.DELETE)
+	@RequestMapping(value = PATH_DELETE_CUSTOMER, method = RequestMethod.DELETE)
 	public void deleteCustomer(@PathVariable String id);
 }
